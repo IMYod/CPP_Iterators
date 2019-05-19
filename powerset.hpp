@@ -44,7 +44,6 @@ namespace itertools{
 
 				auto operator*() const {
 					std::set<typename std::remove_reference<decltype(*(iterable.begin()))>::type> myset = {};
-					//std::set<decltype(*(iterable.begin()))> myset;
 					int i=1;
 					for (auto element : fullSet){
 						if (i & binSets)
