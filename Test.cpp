@@ -196,7 +196,7 @@ int main() {
 
 	//this test failed even when I return right answer
 	testcase.CHECK_EQUAL(iterable_to_string(powerset(range(1,1))),
-		string("{}"));
+		string("{},"));
 
 	//this test failed even when I return right answer
 	testcase.CHECK_EQUAL(iterable_to_string(powerset(range(1,4))),
@@ -221,7 +221,7 @@ int main() {
 
 	//this test failed even when I return right answer
 	testcase.CHECK_EQUAL(iterable_to_string(powerset(chain(zip(range(9,10),range(0,1)),zip(range(5,7),range(-2,0))))),
-		string("{},{m,15},{n,16},{m,15,n,16},"));
+		string("{},{9,0},{5,-2},{5,-2,9,0},{6,-1},{6,-1,9,0},{5,-2,6,-1},{5,-2,6,-1,9,0},"));
 	
 
 	string sets[] = {"","7,1,7,2,","8,1,8,2,","7,1,7,2,8,1,8,2,","9,1,9,2,","7,1,7,2,9,1,9,2,","8,1,8,2,9,1,9,2,","7,1,7,2,8,1,8,2,9,1,9,2,"};
