@@ -67,6 +67,10 @@ int main() {
 	}
 
 
+	for (auto i : powerset(zip(range('m','o'),range(15,17)))){
+		cout << i << ",";
+	}
+
 	for (auto i : powerset(string("abc"))){
 		cout << i << ",";
 	}
