@@ -67,11 +67,9 @@ int main() {
 	}
 
 
-	/*for (auto i : powerset(range(7,10))){
-		for (auto j : product(i,range(1,3)))
-			cout << j << ",";
-		cout << endl;
-	}*/
+	for (auto i : powerset(string("abc"))){
+		cout << i << ",";
+	}
 
 		
 	cout << endl << endl;
