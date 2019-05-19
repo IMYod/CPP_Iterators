@@ -103,7 +103,7 @@ namespace itertools{
 			os << element << ",";
 		}
 		if (myset.size()) // The subset is not the empty set
-			os << '\b'; //Delete last char (,)
+			os.seekp(-1, os.cur); //Delete last char (,)
 		os << "}";
 		return os;
 }
